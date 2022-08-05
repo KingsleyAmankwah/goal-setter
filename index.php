@@ -80,12 +80,12 @@ if(isset($_POST['login'])){
 
 <?php 
 
-if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
+if(isset($_SESSION['title']) && $_SESSION['title'] !== ''){
 
     ?>
     <script>
     Swal.fire({
-        title: "<?php echo $_SESSION['msg']; ?>",
+        title: "<?php echo $_SESSION['title']; ?>",
         icon: "<?php echo $_SESSION['icon']; ?>",
         timer: 3000,
     })
@@ -93,7 +93,7 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
 
     <?php
 
-    unset($_SESSION['msg']);
+    unset($_SESSION['title']);
 }
 
 ?>
