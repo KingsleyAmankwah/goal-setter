@@ -54,24 +54,48 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/sweetalert2.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.13.0-web/css/all.min.css">
     <title>Login System</title>
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post">
-            <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" name="Email" class="form-control" placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-                <label for="">Password</label>
-                <input type="email" name="Password" class="form-control" placeholder="Enter Password">
-            </div>
+    <header class='header'>
+        
+        <div class='logo'>
+            <h4> GoalSetter</h4>
+        </div>
 
-            <div class="form-group">
-                <button type="submit" name="login">Login</button>
-            </div>
-        </form>
+        <ul>
+            <li>
+                 <a href="register.php"> <i class="fas fa-user"></i>   Register</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <div class="container">
+        <section class="heading">
+            <h1> <i class="fas fa-sign-in-alt"></i> Login</h1>
+            <p>Login and start setting goals</p>
+        </section>
+    
+        <section class="form">
+            <form action="" method="post">
+                <div class="form-group">
+                    <input type="email" id="email" class='form-control' name='Email' placeholder="Enter Email..." onChange={onChange} />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class='form-control' name='Password' placeholder="Enter Password..." onChange={onChange} />
+                </div>
+               
+    
+                <div class='form-group'>
+                    <button type="submit" class='btn btn-block' name='login'>Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <a href="register.php">Do not have an account?</a>
     </div>
     <script src="./assets/sweetalert2.min.js"></script>
 </body>
