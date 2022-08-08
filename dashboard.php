@@ -1,7 +1,13 @@
 <?php 
 
+<<<<<<< HEAD
 include 'goals.php';
 include './config/db.php';
+=======
+include './config/db.php';
+session_start();
+if(!$_SESSION['user']) { header("Location: index.php"); }
+>>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +16,7 @@ include './config/db.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./assets/sweetalert2.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.13.0-web/css/all.min.css">
@@ -113,3 +120,12 @@ if(isset($_SESSION['title']) && $_SESSION['title'] !== ''){
 }
 
 ?>
+=======
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>You're welcome <?php echo $_SESSION['user']; ?></h1>
+    <a href="logout.php">logout</a>
+</body>
+</html>
+>>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
