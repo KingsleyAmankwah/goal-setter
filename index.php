@@ -54,11 +54,6 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/sweetalert2.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/fontawesome-free-5.13.0-web/css/all.min.css">
-=======
->>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
     <title>Login System</title>
 </head>
 <body>
@@ -77,30 +72,6 @@ if(isset($_POST['login'])){
     </header>
 
     <div class="container">
-<<<<<<< HEAD
-        <section class="heading">
-            <h1> <i class="fas fa-sign-in-alt"></i> Login</h1>
-            <p>Login and start setting goals</p>
-        </section>
-    
-        <section class="form">
-            <form action="" method="post">
-                <div class="form-group">
-                    <input type="email" id="email" class='form-control' name='Email' placeholder="Enter Email..." onChange={onChange} />
-                </div>
-                <div class="form-group">
-                    <input type="password" id="password" class='form-control' name='Password' placeholder="Enter Password..." onChange={onChange} />
-                </div>
-               
-    
-                <div class='form-group'>
-                    <button type="submit" class='btn btn-block' name='login'>Submit</button>
-                </div>
-            </form>
-        </section>
-
-        <a href="register.php">Do not have an account?</a>
-=======
         <form action="" method="post">
             <div class="form-group">
                 <label for="">Email</label>
@@ -115,7 +86,6 @@ if(isset($_POST['login'])){
                 <button type="submit" name="login">Login</button>
             </div>
         </form>
->>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
     </div>
     <script src="./assets/sweetalert2.min.js"></script>
 </body>
@@ -124,20 +94,12 @@ if(isset($_POST['login'])){
 
 <?php 
 
-<<<<<<< HEAD
-if(isset($_SESSION['title']) && $_SESSION['title'] !== ''){
-=======
 if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
->>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
 
     ?>
     <script>
     Swal.fire({
-<<<<<<< HEAD
-        title: "<?php echo $_SESSION['title']; ?>",
-=======
         title: "<?php echo $_SESSION['msg']; ?>",
->>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
         icon: "<?php echo $_SESSION['icon']; ?>",
         timer: 3000,
     })
@@ -145,11 +107,7 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
 
     <?php
 
-<<<<<<< HEAD
-    unset($_SESSION['title']);
-=======
     unset($_SESSION['msg']);
->>>>>>> 5b30df1c01f5e99942b64354251fed3712583ef4
 }
 
 ?>
