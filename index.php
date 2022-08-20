@@ -54,6 +54,9 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/sweetalert2.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img.png" type="image/x-icon">
     <title>Login System</title>
 </head>
 <body>
@@ -72,20 +75,28 @@ if(isset($_POST['login'])){
     </header>
 
     <div class="container">
+
+
+        <section class="heading">
+            <h1><i class="fas fa-sign-in-alt"></i>Login</h1>
+            <p>Login and start setting goals</p>
+        </section>
+
         <form action="" method="post">
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" name="Email" class="form-control" placeholder="Enter Email">
+                <input type="email" name="Email" class="form-control" placeholder="Enter Email" required>
             </div>
             <div class="form-group">
                 <label for="">Password</label>
-                <input type="email" name="Password" class="form-control" placeholder="Enter Password">
+                <input type="password" name="Password" class="form-control" placeholder="Enter Password" required>
             </div>
 
             <div class="form-group">
-                <button type="submit" name="login">Login</button>
+                <button type="submit" class="btn btn-block" name="login">Login</button>
             </div>
         </form>
+        <a href="register.php">Do not have an account?</a>
     </div>
     <script src="./assets/sweetalert2.min.js"></script>
 </body>
@@ -94,12 +105,12 @@ if(isset($_POST['login'])){
 
 <?php 
 
-if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
+if(isset($_SESSION['title']) && $_SESSION['title'] !== ''){
 
     ?>
     <script>
     Swal.fire({
-        title: "<?php echo $_SESSION['msg']; ?>",
+        title: "<?php echo $_SESSION['title']; ?>",
         icon: "<?php echo $_SESSION['icon']; ?>",
         timer: 3000,
     })
@@ -107,7 +118,7 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] !== ''){
 
     <?php
 
-    unset($_SESSION['msg']);
+    unset($_SESSION['title']);
 }
 
 ?>

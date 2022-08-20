@@ -69,6 +69,7 @@ if (isset($_POST['register'])) {
     <link rel="stylesheet" href="./assets/sweetalert2.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img.png" type="image/x-icon">
     <title>Register</title>
 </head>
 <body>
