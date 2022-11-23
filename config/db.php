@@ -1,7 +1,7 @@
 <?php  
 $username = 'localhost';
 $server = 'root';
-$database = 'login_system';
+$database = 'goal-setter';
 $password = '';
 
 
