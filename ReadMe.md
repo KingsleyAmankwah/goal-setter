@@ -9,7 +9,6 @@ Frontend - HtML & CSS
 Backend - PHP
 Database - MySQL
 
-
 ```
 
 # How to run the Goal setter Project
