@@ -18,7 +18,7 @@ Database - MySQL
 
 2. Extract the file and copy Goal-setter folder
 
-3.Paste inside root directory(for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/html)
+3. Paste inside root directory(for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/html)
 
 4. Open PHPMyAdmin (http://localhost/phpmyadmin)
 
@@ -26,4 +26,4 @@ Database - MySQL
 
 6. Import goal-setter.sql file(given inside the zip package in SQL file folder)
 
-7.Run the script http://localhost/goal-setter (frontend)
+7. Run the script http://localhost/goal-setter (frontend)
