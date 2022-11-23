@@ -1,4 +1,4 @@
-# PHP AND MYSQL CRUD APP
+# PHP AND MYSQL Goal Setter APP
 
 This is a full-stack crud-app for beginners.
 
